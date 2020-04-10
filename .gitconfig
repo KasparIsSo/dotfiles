@@ -37,6 +37,9 @@
 
 	# add all
 	aa = add --all
+	
+	# Pull in remote changes for the current repository and all its submodules
+	p = git pull --recurse-submodules
 
 	# add by patch - looks at each change, and asks if we want to put it in the repo.
 	ap = add --patch
@@ -817,6 +820,9 @@
 
 	ull = pull
 	ush = push
+
+	# Show the user email for the current repository.
+	whoami = config user.email
 
 [apply]
 
